@@ -10,9 +10,14 @@ int a = num / 10;
 int b = num % 10;
 if (a > b)
 {
-    Console.Write($"{num} - > {a}");
+    Console.WriteLine($"{num} -> {a}");
 }
 else
 {
-    Console.Write($"{num} - > {b}");
+    Console.WriteLine($"{num} -> {b}");
 }
+
+//Ternarnii operator
+
+int maxDigit = a > b ? a : b;
+Console.WriteLine($"{num} -> {maxDigit}");
