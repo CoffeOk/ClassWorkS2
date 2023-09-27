@@ -4,6 +4,14 @@
 
 //Решение 1.
 
+int MaxDigit(int nu)
+{
+    int a = nu / 10;
+    int b = nu % 10;
+    // int maxDigit = a > b ? a : b;
+    // return maxDigit;
+    return a > b ? a : b;
+}
  int num = new Random().Next(10,100);
 //Console.Write($"Случайное число -> {num}");
 /*
@@ -37,12 +45,4 @@ Console.WriteLine($"max -> {maxDigit4}");
 int maxDigit5 = MaxDigit(56);
 Console.WriteLine($"max -> {maxDigit5}");
 
-int MaxDigit(int nu)
-{
-    int a = nu / 10;
-    int b = nu % 10;
-    // int maxDigit = a > b ? a : b;
-    // return maxDigit;
-    return a > b ? a : b;
-}
 
